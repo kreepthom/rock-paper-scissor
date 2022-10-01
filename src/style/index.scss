@@ -1,0 +1,18 @@
+
+// setting
+@forward './settings/base';
+
+//component
+@forward './app';
+@forward './components/_score_section';
+@forward './components/_rules_button';
+@forward './components/_options';
+@forward './components/_three_game_options';
+@forward './components/_five_game_options';
+@forward './components/_modal-rules';
+@forward './components/_select-ia';
+@forward './components/_show_state';
+
+// font
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&display=swap');
+

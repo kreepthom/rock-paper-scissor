@@ -1,0 +1,52 @@
+@use '../settings/variable.scss' as v;
+
+.game_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container_threeop {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-image: url('../../../public/assets/bg-triangle.svg');
+    background-size: 260px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 50px;
+
+    & :nth-child(1) {
+
+        position: absolute;
+        top: -10%;
+        right: 60%;
+        background-color: v.$Paper-Gradient;
+        
+        &:hover {
+            background-color: v.$Paper-Gradient-dark;
+        }
+    }
+    
+    & :nth-child(2) {
+        position: absolute;
+        top: -10%;
+        right: -10%;
+        background-color: v.$Scissors-Gradient;
+        &:hover {
+            background-color: v.$Scissors-Gradient-dark;
+        }
+    }
+    
+    & :nth-child(3) {
+        position: absolute;
+        left: 25%;
+        bottom: -5%;
+        background-color: v.$Rock-Gradient;
+        &:hover {
+            background-color: v.$Rock-Gradient-dark;
+        }
+    }
+}

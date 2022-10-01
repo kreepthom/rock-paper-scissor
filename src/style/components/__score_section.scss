@@ -1,0 +1,49 @@
+@use '../settings/variable.scss' as v;
+
+.score {
+    height: 130px;
+    width: 100%;
+    padding-right: 15px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-between;
+    border: 2px solid v.$Header-Outline;
+
+    &__logo {
+        scale: .9;
+        margin: 10px ;
+    }
+
+    &__count {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 100px;
+        margin: auto 0;
+        background-color: #fff;
+        border-radius: 10px;
+
+        span {
+            height: 15px;
+            color: v.$Score-Text;
+            text-transform: uppercase;
+        }
+
+        p {
+            height: 50px;
+            text-align: center;
+            color: v.$Dark-Text;
+            font-weight: 700;
+            font-size: 50px
+        }
+    }
+
+    &__logobonus {
+        scale: .9;
+        width: 120px;
+        height: 110px;
+        margin: 10px 20px;
+    }
+}

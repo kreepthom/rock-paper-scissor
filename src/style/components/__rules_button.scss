@@ -1,0 +1,29 @@
+@use '../settings/variable.scss' as v;
+
+.rules_button{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    padding: 7px;
+    display: flex;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: v.$white;
+    justify-content: center;
+    align-items: center;
+    border-radius:8px;
+    border: 1.5px solid v.$white;
+    cursor: pointer;
+    &:hover {
+        transition: .3s;
+        scale: 1.05;
+        background-color: rgba($color: #000000, $alpha: 0.2)
+    }
+    &:active{
+        scale: .9;
+    }
+
+}

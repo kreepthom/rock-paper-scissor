@@ -1,0 +1,48 @@
+@use '../settings/variable.scss' as v;
+
+.selectia__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 800px;
+    height: 450px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.choice_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h3 {
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: v.$white;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &:nth-child(3) {
+        & :nth-child(2) {
+            position: relative;
+
+            &::before {
+                content: '';
+                visibility: visible;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-color: rgba($color: #000000, $alpha: 0.2);
+            }
+        }
+    }
+}

@@ -1,0 +1,87 @@
+@use '../settings/variable.scss' as v;
+
+.options {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: inset 0 -5px 4px 0 rgba(0, 0, 0, .4);
+
+    &__button {
+        border-radius: 50%;
+        background-color: v.$white !important;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        box-shadow: inset 0 6px 0px 0 rgba(v.$Header-Outline, .2);
+        top: 50% !important;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+    }
+
+    svg {
+        position: absolute;
+        top: 50% !important;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        background-color: transparent !important;
+    }
+
+    &:hover {
+        transition: .2s;
+        background-color: v.$Rock-Gradient-dark;
+    }
+
+    &:active {
+        scale: .6;
+    }
+}
+
+.Sizem {
+    width: 160px;
+    height: 160px;
+
+    & div {
+        width: 122px;
+        height: 122px;
+    }
+    & svg {
+        scale: 1.1;
+        transform: translate(-45%, -45%);
+    }
+}
+
+.Sizes {
+    display: block;
+    width: 125px;
+    height: 125px;
+    & div {
+        width: 95px;
+        height: 95px;
+        display: block;
+    }
+    & svg{
+        scale: 0.8;
+        transform: translate(-62%, -62%);
+    }
+}
+
+.Sizel{
+    display: block;
+    width: 270px;
+    height: 270px;
+    & div {
+        width: 200px;
+        height: 200px;
+        display: block;
+    }
+    & svg{
+        scale: 1.8;
+        transform: translate(-30%, -30%);
+    }
+}

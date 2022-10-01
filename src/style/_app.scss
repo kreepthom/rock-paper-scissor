@@ -1,0 +1,8 @@
+@use './settings/variable.scss' as Var;
+
+.App{
+    width: 680px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+}

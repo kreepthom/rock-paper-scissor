@@ -1,0 +1,50 @@
+@use '../settings/variable.scss' as v;
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+        border-radius: 8px;
+        background-color: white;
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+
+            h4 {
+                color: v.$Dark-Text ;
+                font-size: 30px;
+                text-transform: uppercase;
+            }
+
+            svg {
+                cursor: pointer;
+
+                & :hover {
+                    fill: black;
+                }
+            }
+        }
+
+        &:nth-child(2) {
+            scale: .9;
+            margin: 0 auto;
+        }
+
+    }
+}
