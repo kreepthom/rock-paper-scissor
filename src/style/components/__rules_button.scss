@@ -27,3 +27,14 @@
     }
 
 }
+
+@media (max-width:500px) {
+    .rules_button{
+        width: 130px;
+        height: 40px;
+        right: 50%;
+        transform: translate(50%,0%);
+        bottom: 40px;
+        font-size: 15px;
+    }
+}

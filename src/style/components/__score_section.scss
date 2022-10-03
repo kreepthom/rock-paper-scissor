@@ -47,3 +47,92 @@
         margin: 10px 20px;
     }
 }
+
+@media (max-width:700px){
+    .score {
+        height: 100px;
+        width: 100%;
+        padding-right: 15px;
+        display: flex;
+        border-radius: 10px;
+        justify-content: space-between;
+        border: 2px solid v.$Header-Outline;
+    
+        &__logo {
+            scale: .7;
+            margin: auto 0 ;
+        }
+    
+        &__count {
+            min-width: 100px;
+            width: 16vw;
+            height: 13vh;
+            min-height: 20px !important;
+            span {
+                height: 10px;
+                color: v.$Score-Text;
+                text-transform: uppercase;
+            }
+    
+            p {
+                height: 50px;
+                text-align: center;
+                color: v.$Dark-Text;
+                font-weight: 700;
+                font-size: 50px
+            }
+        }
+    
+        &__logobonus {
+            scale: .9;
+            width: 120px;
+            height: 110px;
+            margin: 10px 20px;
+        }
+    }
+}
+@media (max-width:500px){
+    .score {
+        height: 100px;
+        width: 100%;
+        padding-right: 15px;
+        display: flex;
+        border-radius: 10px;
+        justify-content: space-between;
+        border: 2px solid v.$Header-Outline;
+    
+        &__logo {
+            scale: .7;
+            margin: auto 0 ;
+        }
+    
+        &__count {
+            padding: 3vw 0;
+            justify-content:flex-start;
+            width: 16vw;
+            height: 13vh;
+
+            max-height: 90px !important;
+            span {
+                height: 10px;
+                color: v.$Score-Text;
+                text-transform: uppercase;
+            }
+    
+            p {
+                height: 30px;
+                text-align: center;
+                color: v.$Dark-Text;
+                font-weight: 700;
+                font-size: 50px
+            }
+        }
+    
+        &__logobonus {
+            scale: .9;
+            width: 120px;
+            height: 110px;
+            margin: 10px 20px;
+        }
+    }
+}

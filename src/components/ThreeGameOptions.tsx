@@ -38,6 +38,7 @@ export const Options: FC<IOptions> = ({ icon, size, value }) => {
   }
 
   return (
+    
     <div onClick={() => handleValue(value)} className={`options ${size}`}>
       <div className="options__button ">
         {icon}

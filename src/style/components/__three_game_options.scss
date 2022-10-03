@@ -1,18 +1,11 @@
 @use '../settings/variable.scss' as v;
 
-.game_section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
 
 .container_threeop {
     position: relative;
     width: 300px;
     height: 300px;
-    background-image: url('../../../public/assets/bg-triangle.svg');
+    background-image: url('./../../../public/assets/bg-triangle.svg');
     background-size: 260px 200px;
     background-repeat: no-repeat;
     background-position: center;
@@ -48,5 +41,10 @@
         &:hover {
             background-color: v.$Rock-Gradient-dark;
         }
+    }
+}
+@media (max-width:500px) {
+    .container_threeop {
+        margin-top: 12vh;
     }
 }

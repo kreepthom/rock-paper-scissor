@@ -18,6 +18,14 @@ body {
     height: 100vh;
 }
 
+.game_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
 .yellow {
     background-color: v.$Scissors-Gradient  !important;
 }
@@ -39,11 +47,36 @@ body {
 }
 
 .shadow_win {
-    box-shadow: 0 0 0px 50px rgba($color: #fff, $alpha: 0.05),
-        0 0 0px 100px rgba($color: #fff, $alpha: 0.04),
-        0 0 0px 150px rgba($color: #fff, $alpha: 0.03) !important;
+    animation: shadowwin 1s infinite 1s;
+    animation-fill-mode: forwards !important;
 }
 
 .disableclick {
     pointer-events: none;
+}
+
+
+@keyframes shadowwin {
+    0% {
+        box-shadow: 0 0 0px 50px rgba($color: #fff, $alpha: 0.05),
+            0 0 0px 100px rgba($color: #fff, $alpha: 0.04),
+            0 0 0px 150px rgba($color: #fff, $alpha: 0.03);
+    }
+
+    50% {
+        box-shadow:0 0 0px 100px rgba($color: #fff, $alpha: 0.05),
+        0 0 0px 50px rgba($color: #fff, $alpha: 0.04),
+        0 0 0px 150px rgba($color: #fff, $alpha: 0.03);
+    }
+    100% {
+        box-shadow:0 0 0px 50px rgba($color: #fff, $alpha: 0.02),
+            0 0 0px 100px rgba($color: #fff, $alpha: 0.03),
+            0 0 0px 120px rgba($color: #fff, $alpha: 0.04);
+    }
+}
+
+@media (max-width:500px) {
+    .game_section {
+        align-items: flex-start;
+    }
 }

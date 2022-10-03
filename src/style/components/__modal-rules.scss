@@ -18,7 +18,7 @@
         justify-content: center;
         padding: 30px;
         border-radius: 8px;
-        background-color: white;
+        background-color: v.$white;
 
         div {
             display: flex;
@@ -46,5 +46,41 @@
             margin: 0 auto;
         }
 
+    }
+}
+@media (max-width:500px){
+    .modal {
+        background-color: v.$white;
+    
+        &__content {
+    
+            div {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 90px;
+    
+                h4 {
+                    color: v.$Dark-Text ;
+                    font-size: 40px;
+                    text-transform: uppercase;
+                }
+    
+                svg {
+                    scale: 1.5;
+                    cursor: pointer;
+    
+                    & :hover {
+                        fill: black;
+                    }
+                }
+            }
+    
+            &:nth-child(2) {
+                scale: .9;
+                margin: 0 auto;
+            }
+    
+        }
     }
 }

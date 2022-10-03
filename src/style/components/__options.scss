@@ -11,7 +11,7 @@
 
     &__button {
         border-radius: 50%;
-        background-color: v.$white !important;
+        background-color: v.$white  !important;
         display: flex;
         position: absolute;
         justify-content: center;
@@ -50,6 +50,7 @@
         width: 122px;
         height: 122px;
     }
+
     & svg {
         scale: 1.1;
         transform: translate(-45%, -45%);
@@ -60,28 +61,90 @@
     display: block;
     width: 125px;
     height: 125px;
+
     & div {
         width: 95px;
         height: 95px;
         display: block;
     }
-    & svg{
+
+    & svg {
         scale: 0.8;
         transform: translate(-62%, -62%);
     }
 }
 
-.Sizel{
+.Sizel {
     display: block;
     width: 270px;
     height: 270px;
+
     & div {
         width: 200px;
         height: 200px;
         display: block;
     }
-    & svg{
+
+    & svg {
         scale: 1.8;
         transform: translate(-30%, -30%);
+    }
+}
+
+@media (max-width:950px) {
+    .Sizel {
+        display: block;
+        width: 210px;
+        height: 210px;
+
+        & div {
+            width: 160px;
+            height: 160px;
+            display: block;
+        }
+
+        & svg {
+            scale: 1.4;
+            transform: translate(-42%, -42%);
+        }
+    }
+}
+
+@media (max-width:780px) {
+    .Sizel {
+        display: block;
+        width: 180px;
+        height: 180px;
+
+        & div {
+            width: 130px;
+            height: 130px;
+            display: block;
+        }
+
+        & svg {
+            scale: 1.2;
+            transform: translate(-42%, -42%);
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .Sizel {
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+
+        & div {
+            width: 115px;
+            height: 115px;
+            display: block;
+        }
+
+        & svg {
+            scale: 1.2;
+            transform: translate(-42%, -42%);
+        }
     }
 }

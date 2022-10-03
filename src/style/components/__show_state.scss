@@ -1,6 +1,9 @@
 @use '../settings/variable.scss' as v;
 
 .showstate {
+    scale: 0;
+    animation: hiddenState 2s 1 .7s ;
+    animation-fill-mode: forwards !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,6 +44,41 @@
             &:active {
                 scale: 0.9;
             }
+        }
+    }
+}
+
+@keyframes hiddenState {
+    0%{
+        scale: 0;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+@media (max-width:500px) {
+    .showstate {
+        position: absolute;
+        top: 60%;
+        width: 300px;
+        h1{
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%,0%);
+            width: 300px;
+            font-size: 65px;
+        }
+        button{
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%,0%);
+            width: 250px;
+            height: 50px;
+            font-size: 18px;
+            color: v.$Dark-Text;
+            top: 80px;
         }
     }
 }

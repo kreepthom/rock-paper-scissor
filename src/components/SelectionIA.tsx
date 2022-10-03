@@ -15,8 +15,6 @@ interface IChoice {
 
 
 const Choice: FC<IChoice> = ({ picked = 0, title, disable, win, draw }) => {
-
-
     const iconOblect = [
         { icon: <IconRock />, color: 'red' },
         { icon: <IconPaper />, color: 'blue' },
@@ -34,7 +32,7 @@ const Choice: FC<IChoice> = ({ picked = 0, title, disable, win, draw }) => {
                 icon={icon}
                 size={`${color} Sizel 
                     ${disable && 'disableclick'}
-                    ${!draw && win && 'shadow_win'}
+                     ${!draw && win && 'shadow_win'}
                 `}
             />
         </div>
