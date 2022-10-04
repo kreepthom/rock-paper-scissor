@@ -49,7 +49,7 @@ export const Options: FC<IOptions> = ({ icon, size, value }) => {
 
 export const ThreeGameOptions = () => {
   return (
-    <div className="container_threeop">
+    <div className="container_threeop" style={{backgroundImage:"url('assets/bg-triangle.svg')"}}>
       <Options value={1} size='Sizem' icon={<IconPaper />} />
       <Options value={2} size='Sizem' icon={<IconScissors />} />
       <Options value={0} size='Sizem' icon={<IconRock />} />
